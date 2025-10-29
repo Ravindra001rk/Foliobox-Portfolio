@@ -8,7 +8,7 @@ import ClckToTop from "./components/ClckToTop";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-black">
       <ClckToTop/>
       <Navbar />
       <Routes>

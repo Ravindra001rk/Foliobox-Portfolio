@@ -19,18 +19,17 @@ const Card = () => {
     gsap.from(cardRef.current, {
       y: 100,
       duration: 1,
-      scrollTrigger:{
-        trigger:cardRef.current,
-        markers:true,
-        
-      }
+      opacity: 0,
+      scrollTrigger: {
+        trigger: cardRef.current,
+      },
     });
   });
   return (
-    <div className="h-screen flex items-center overflow-hidden lg:py-10 lg:px-32 px-8  justify-center w-full bg-[#141414]">
+    <div className="h-screen flex items-center overflow-hidden lg:py-10 lg:px-32 px-8  justify-center w-full bg-[#0d0c0c]">
       <div
         ref={cardRef}
-        className="h-full  relative w-full bg-black rounded-4xl"
+        className="h-full  relative w-full w rounded-4xl"
       >
         <div className="overflow-hidden rounded-4xl h-full w-full">
           <img
