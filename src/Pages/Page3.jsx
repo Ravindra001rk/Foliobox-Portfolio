@@ -11,7 +11,7 @@ const Page3 = () => {
     },
   ];
   return (
-    <div className="min-h-screen bg-[#0d0d0d] md:pt-1 lg:px-35 px-10 pb-20 rounded-b-[8%]">
+    <div className="min-h-screen bg-[#0d0d0d] md:pt-1 lg:px-35 px-10 pb-30 lg:rounded-b-[8%] rounded-b-[8%]">
       <div>
         <PageHeading data={data} showButton={false} />
       </div>

@@ -4,7 +4,6 @@ import { FaArrowUp } from "react-icons/fa";
 const ClckToTop = () => {
   const [showButton, setShowButton] = useState(false);
 
-  // Show button when page is scrolled up to given distance
   const handleScroll = () => {
     if (window.scrollY > 300) {
       setShowButton(true);
@@ -13,7 +12,6 @@ const ClckToTop = () => {
     }
   };
 
-  // Scroll to top handler
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -21,7 +19,6 @@ const ClckToTop = () => {
     });
   };
 
-  // Add scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {

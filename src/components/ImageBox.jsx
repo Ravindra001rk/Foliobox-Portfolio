@@ -31,7 +31,7 @@ const ImageBox = ({ src }) => {
           <img
             src={src}
             alt="img"
-            className="h-full w-full duration-1000 hover:scale-110 hover:grayscale-100"
+            className="h-full w-full object-cover duration-1000 hover:scale-110 "
           />
         </div>
       </div>

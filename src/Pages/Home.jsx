@@ -6,7 +6,6 @@ import Marquee from "../components/Marquee";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Footer from "./Footer";
-gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const imgRef = useRef(null);
@@ -20,23 +19,22 @@ const Home = () => {
       opacity: 0,
       onComplete: () => {
         gsap.to(imgRef.current, {
-          opacity:0,
+          opacity: 0,
           scale: 1.5,
           ease: "none",
           scrollTrigger: {
             trigger: imgRef.current,
             start: "90% 80%",
             end: "150% 90%",
-            scrub:1,
+            scrub: true,
           },
         });
       },
     });
   });
 
-
   return (
-    <div className="home bg-[#141414] home overflow-hidden">
+    <div className="home bg-[#141414] overflow-hidden">
       <div className="relative h-screen w-full bg-black rounded-b-[8%] overflow-hidden">
         <img
           ref={imgRef}
@@ -97,9 +95,9 @@ const Home = () => {
       <div className="h-full bg-[#0d0d0d]">
         <Marquee />
       </div>
-     <Page2 />
+      <Page2 />
       <Page3 />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

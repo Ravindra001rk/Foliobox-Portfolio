@@ -4,8 +4,6 @@ import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 import About from "./NavPages/About";
 import Projects from "./NavPages/Projects";
-import Page2 from "./Pages/Page2";
-import Page3 from "./Pages/Page3";
 import ClckToTop from "./components/ClckToTop";
 
 const App = () => {

@@ -37,7 +37,11 @@ const PageHeading = ({ data, showButton = true }) => {
           <h2 className="text-white md:mt-7 leading-[1.5]  font-semibold text-[3.8vw] md:text-3xl">
             {h3}
           </h2>
-          <div className="grid md:grid-cols-2 items-center">
+          <div
+            className={`grid ${
+              showButton ? "md:grid-cols-2" : ""
+            } items-center`}
+          >
             <p className="text-[#687575]">{h4}</p>
             {showButton && (
               <div className="md:w-max md:mt-0 mt-4">

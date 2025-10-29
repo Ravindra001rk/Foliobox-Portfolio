@@ -8,6 +8,13 @@ import { NavLink } from "react-router-dom";
 const MenuNav = ({ menuOpen, setMenuOpen }) => {
   const navRef = useRef();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     if (menuOpen) {
       gsap.to(navRef.current, {
@@ -30,7 +37,13 @@ const MenuNav = ({ menuOpen, setMenuOpen }) => {
       className="fixed z-[200] backdrop-blur-[22px] w-full pt-4 -top-[55%]"
     >
       <div className="flex items-center justify-between px-4">
-        <NavLink to='/' onClick={() => setMenuOpen(false)}>
+        <NavLink
+          to="/"
+          onClick={() => {
+            setMenuOpen(false);
+            scrollToTop();
+          }}
+        >
           <h1 className="text-2xl font-bold">
             Folioblox
             <span className="text-red-700 text-[15px] align-top">®</span>
@@ -38,7 +51,10 @@ const MenuNav = ({ menuOpen, setMenuOpen }) => {
         </NavLink>
         <IoCloseSharp
           className="text-3xl cursor-pointer"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            scrollToTop();
+          }}
         />
       </div>
 
@@ -46,7 +62,10 @@ const MenuNav = ({ menuOpen, setMenuOpen }) => {
         <ul className="flex flex-col gap-3">
           <NavLink
             to="/"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollToTop();
+            }}
             className={({ isActive }) =>
               isActive ? "text-red-500" : "text-white"
             }
@@ -56,7 +75,10 @@ const MenuNav = ({ menuOpen, setMenuOpen }) => {
 
           <NavLink
             to="about"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollToTop();
+            }}
             className={({ isActive }) =>
               isActive ? "text-red-500" : "text-white"
             }
@@ -66,7 +88,10 @@ const MenuNav = ({ menuOpen, setMenuOpen }) => {
 
           <NavLink
             to="projects"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollToTop();
+            }}
             className={({ isActive }) =>
               isActive ? "text-red-500 " : "text-white"
             }

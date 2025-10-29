@@ -1,11 +1,13 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import AboutPage1 from "../About-Page/AboutPage1";
+import LandingPage from "../LandingPage";
+import Card from "../Page 3/Card";
 const About = () => {
   return (
-    <div className="pt-52 h-screen w-full bg-black text-white">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aliquid
-      maiores praesentium doloribus laudantium delectus quos! Ea vel quisquam,
-      perspiciatis non in ab accusamus consequuntur.
+    <div>
+      <LandingPage />
+      <AboutPage1 />
+      <Card/>
     </div>
   );
 };

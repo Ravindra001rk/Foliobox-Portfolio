@@ -25,6 +25,13 @@ const Navbar = () => {
     setMenuOpen((v) => !v); // toggle instead of always setting true
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  
   return (
     <div>
       <MenuNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -34,27 +41,35 @@ const Navbar = () => {
         }`}
       >
         <nav className="container mx-auto flex justify-between items-center p-4">
-          <NavLink to="/">
+          <NavLink to="/" onClick={scrollToTop}>
             <h1 className="text-3xl font-bold">
               Folioblox<span className="text-black text-xl align-top">®</span>
             </h1>
           </NavLink>
           <div>
-            <ul className="hidden md:flex mix-blend-difference space-x-6 items-center">
-              <NavLink to="/">
-                <li>Home</li>
+            <ul className="hidden md:flex space-x-6 items-center">
+              <NavLink to="/" onClick={scrollToTop}>
+                <li className="hover:text-orange-500">Home</li>
               </NavLink>
 
-              <NavLink to="about" className={({ isActive }) =>
+              <NavLink
+              onClick={scrollToTop}
+                to="about"
+                className={({ isActive }) =>
                   isActive ? "text-red-500" : "text-white"
-                }>
-                <li>About</li>
+                }
+              >
+                <li className="hover:text-orange-500">About</li>
               </NavLink>
 
-              <NavLink to="projects" className={({ isActive }) =>
+              <NavLink
+              onClick={scrollToTop}
+                to="projects"
+                className={({ isActive }) =>
                   isActive ? "text-red-500 " : "text-white"
-                }>
-                <li>Projects</li>
+                }
+              >
+                <li className="hover:text-orange-500"> Projects</li>
               </NavLink>
 
               <Button text="Get in Touch" />

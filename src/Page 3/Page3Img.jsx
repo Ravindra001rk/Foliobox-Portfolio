@@ -12,9 +12,11 @@ const Page3Img = () => {
             className="w-full h-64 md:h-130 object-cover opacity-90"
           />
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-            <div className="h-[2px] bg-orange-500 w-16 mb-3"></div>
-            <h2 className="text-xl font-semibold">Strategy First</h2>
-            <p className="text-sm text-gray-300">
+            <div className="h-[4px] bg-orange-500 w-full lg:mb-3 mb-2"></div>
+            <h2 className="lg:text-3xl text-xl font-semibold">
+              Strategy First
+            </h2>
+            <p className="lg:text-m text-sm text-gray-300">
               Every design decision is rooted in a clear brand strategy. No
               guesswork.
             </p>
@@ -29,11 +31,12 @@ const Page3Img = () => {
             className="w-full h-64 md:h-130 object-cover opacity-90"
           />
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-            <div className="h-[2px] bg-orange-500 w-16 mb-3"></div>
-            <h2 className="text-xl font-semibold">Strategy First</h2>
-            <p className="text-sm text-gray-300">
-              Every design decision is rooted in a clear brand strategy. No
-              guesswork.
+            <div className="h-[4px] bg-orange-500 w-full lg:mb-3 mb-2"></div>
+            <h2 className="lg:text-3xl text-xl font-semibold">
+              Design That Resonates
+            </h2>
+            <p className="lg:text-m text-sm text-gray-300">
+              Visuals that connect emotionally and communicate clearly.
             </p>
           </div>
         </div>
@@ -46,11 +49,12 @@ const Page3Img = () => {
             className="w-full h-64 md:h-130 object-cover opacity-90"
           />
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-            <div className="h-[2px] bg-orange-500 w-16 mb-3"></div>
-            <h2 className="text-xl font-semibold">Strategy First</h2>
-            <p className="text-sm text-gray-300">
-              Every design decision is rooted in a clear brand strategy. No
-              guesswork.
+            <div className="h-[4px] bg-orange-500 w-full lg:mb-3 mb-2"></div>
+            <h2 className="lg:text-3xl text-xl font-semibold">
+              Future-Proof Systems
+            </h2>
+            <p className="lg:text-m text-sm text-gray-300">
+              Design that’s flexible, scalable, and easy to use.
             </p>
           </div>
         </div>
@@ -63,11 +67,11 @@ const Page3Img = () => {
             className="w-full h-64 md:h-130 object-cover opacity-90"
           />
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-            <div className="h-[2px] bg-orange-500 w-16 mb-3"></div>
-            <h2 className="text-xl font-semibold">
+            <div className="h-[4px] bg-orange-500 w-full mb-3"></div>
+            <h2 className="lg:text-3xl text-xl font-semibold">
               Consistency Across Touchpoints
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-m text-gray-300">
               From logo to social templates, I help you stay on-brand
               everywhere.
             </p>
