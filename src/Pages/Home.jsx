@@ -14,7 +14,7 @@ const Home = () => {
   useGSAP(() => {
     gsap.from(".home", {
       opacity: 0,
-      duration: .8,
+      duration: 0.8,
     });
     gsap.from(imgRef.current, {
       y: 80,
@@ -39,8 +39,8 @@ const Home = () => {
   });
 
   return (
-    <div >
-      <div className="home bg-[#141414] overflow-hidden">
+    <div>
+      <div className="home  bg-[#141414] overflow-hidden">
         <div className="relative h-screen w-full bg-black rounded-b-[8%] overflow-hidden">
           <img
             ref={imgRef}

@@ -36,7 +36,7 @@ const LandingPage = ({ imageUrl, BrandName, Page, para1, para2 }) => {
 
   return (
     <div>
-      <div className="bg-[#0d0c0c] home">
+      <div className="bg-[#141515] home">
         <div className="relative h-[80vh] w-full bg-black rounded-b-[8%] overflow-hidden">
           <img
             ref={imgRef}
